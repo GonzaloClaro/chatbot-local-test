@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Local Chat</h1>
+      <button id="new-chat-btn" class="btn-new-chat">New Chat</button>
+    </header>
+
+    <main id="messages" class="messages" role="log" aria-live="polite"></main>
+
+    <form id="chat-form" class="input-area">
+      <textarea
+        id="user-input"
+        class="user-input"
+        placeholder="Type a message… (Enter to send, Shift+Enter for newline)"
+        rows="1"
+        autofocus
+      ></textarea>
+      <button type="submit" id="send-btn" class="btn-send">Send</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
